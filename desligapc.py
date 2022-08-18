@@ -14,6 +14,7 @@ with open("config/msg.txt", "r") as tf:
 for line in lines:
     Computer_List = [line]
     for Computer in Computer_List:
+        print("Desligando o PC:" + Computer)
         a = subprocess.getoutput(
             "shutdown /m \\\\" + Computer + " /f /s /c"+msg+"/t 60"+msg) + '\n'
         arquivo = open('logs/log['+data_e_hora_em+'].txt', 'a')
