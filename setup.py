@@ -12,9 +12,9 @@ options = {
 }
 
 setup(
-    name="desligaPC",
+    name="Desliga PC",
     options=options,
     version="1.0",
-    description='<any description>',
+    description='Script simples para desligar PCs',
     executables=executables
 )
